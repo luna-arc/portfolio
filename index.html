@@ -1,69 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sindhu S</title>
+  <meta charset="UTF-8">
+  <title>Navbar Final</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>SINDHU S</h1>
-    <p>Designing reactive, living interfaces.</p>
-  </section>
+<header class="navbar">
+  <div class="nav-container">
 
-  <!-- ABOUT -->
-  <section class="about">
-    <div class="glass">
-      <h2>About Me</h2>
-      <p>
-        I design immersive digital experiences with clean UI,
-        smooth interaction, and strong visual systems.
-      </p>
-    </div>
-  </section>
+    <!-- Liquid cursor glow -->
+    <div class="cursor-glow"></div>
 
-  <!-- PROJECTS -->
-  <section class="projects">
+    <nav class="nav-links">
+      <a class="active"><i data-lucide="sparkles"></i> Home</a>
+      <a><i data-lucide="user"></i> About</a>
+      <a><i data-lucide="layout-grid"></i> Projects</a>
+      <a><i data-lucide="git-branch"></i> Skills</a>
+      <a><i data-lucide="mail"></i> Contact</a>
+    </nav>
 
-    <div class="card">
-      <div>
-        <h3>SmartEdu</h3>
-        <p>An AI-powered assistant for student learning and task management.</p>
-      </div>
-    </div>
+  </div>
+</header>
 
-    <div class="card">
-      <div>
-        <h3>Personal Project</h3>
-        <p>Currently building an interactive system-based application.</p>
-      </div>
-    </div>
+<script src="js/main.js"></script>
 
-    <div class="card">
-      <div>
-        <h3>More Coming Soon</h3>
-        <p>New projects in development.</p>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- SKILLS -->
-  <section class="skills">
-    <h2>Skills</h2>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact">
-    <h2>Get In Touch</h2>
-  </section>
+<script>
+  lucide.createIcons();
+</script>
 
 </body>
 </html>
