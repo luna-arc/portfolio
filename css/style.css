@@ -7,10 +7,11 @@
 
 /* BODY */
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+
+  /* ❌ REMOVE FLEX */
+  display: block;
 
   font-family: Inter, sans-serif;
   color: white;
@@ -209,4 +210,68 @@ body {
 
 .nav-links a.active i {
   color: #ffffff;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: 220px;   /* 👈 THIS WILL WORK NOW */
+}
+
+/* TEXT BLOCK */
+.hero-left {
+  max-width: 520px;
+}
+
+/* INTRO */
+.intro {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  color: #b5b5b5;
+  font-weight: 500;
+}
+
+/* NAME */
+.name {
+  font-size: 72px;
+  font-weight: 800;
+
+  background: linear-gradient(135deg, #7a0f2c, #a61b3f, #d92b55);
+
+  /* ✅ ADD THIS */
+  background-clip: text;
+
+  /* already there */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 12px;
+}
+
+/* ROLE */
+.role {
+  font-size: 26px;
+  color: #d4d4d4;
+  margin-bottom: 12px;
+}
+
+/* LINE */
+.accent-line {
+  width: 48px;
+  height: 2px;
+  background: #a61b3f;
+  margin-bottom: 18px;
+}
+
+/* DESCRIPTION */
+.desc {
+  max-width: 460px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #9a9a9a;
 }
