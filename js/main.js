@@ -164,3 +164,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const form = document.getElementById("contactForm");
+const btn = form.querySelector(".btn-send");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  btn.innerText = "Sending...";
+  btn.disabled = true;
+
+  const data = new FormData(form);
+
+  const res = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: { Accept: "application/json" }
+  });
+
+  if (res.ok) {
+    btn.innerText = "Sent ✓";
+    form.reset();
+  } else {
+    btn.innerText = "Error!";
+  }
+
+  setTimeout(() => {
+    btn.innerText = "Send Message";
+    btn.disabled = false;
+  }, 2000);
+});
