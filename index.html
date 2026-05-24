@@ -1,97 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Navbar Final</title>
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sindhu S — UI/UX Designer & Frontend Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
+<!-- ─────────────────── NAVBAR ─────────────────── -->
 <header class="navbar">
+
   <div class="nav-container">
 
-    <!-- Liquid cursor glow -->
-    <div class="cursor-glow"></div>
+    <!-- EDGE BLEND (glow effect) -->
+    <div class="edge-blend"></div>
 
+    <!-- NAV LINKS -->
     <nav class="nav-links">
-      <a class="active"><i data-lucide="sparkles"></i> Home</a>
-      <a><i data-lucide="user"></i> About</a>
-      <a><i data-lucide="layout-grid"></i> Projects</a>
-      <a><i data-lucide="git-branch"></i> Skills</a>
-      <a><i data-lucide="mail"></i> Contact</a>
+
+      <a href="#hero" class="active">
+        <i data-lucide="sparkles"></i>
+        Home
+      </a>
+
+      <a href="#about">
+        <i data-lucide="user"></i>
+        About
+      </a>
+
+      <a href="#projects">
+        <i data-lucide="layout-grid"></i>
+        Projects
+      </a>
+
+      <a href="#skills">
+        <i data-lucide="git-branch"></i>
+        Skills
+      </a>
+
+      <a href="#contact">
+        <i data-lucide="mail"></i>
+        Contact
+      </a>
+
     </nav>
 
   </div>
+
 </header>
 
-<section class="hero">
-
-  <!-- LEFT TEXT -->
+<!-- ─────────────────── HERO ─────────────────── -->
+<section id="hero" class="hero">
   <div class="hero-left">
-    <p class="intro">HI, I'M</p>
-
-    <h1 class="name">SINDHU S</h1>
-
-    <h2 class="role">Software Engineer</h2>
-
-    <div class="vine-line"></div>
-
-    <p class="desc">
-      Building intelligent systems with clean UI, smooth interaction,
-      and a focus on human-centered design.
-    </p>
+    <div class="hero-hi">HI, I'M</div>
+    <h1 class="hero-name">SINDHU S</h1>
+    <div class="hero-role">UI/UX Designer &amp; Frontend Developer</div>
+    <p class="hero-tagline">Designing clean interfaces and seamless user experiences.</p>
+    <p class="hero-desc">Passionate about crafting digital experiences that are both beautiful and functional, with attention to every detail.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">
+        View My Work
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-secondary">Contact Me</a>
+    </div>
   </div>
 
-  <!-- 🔥 RIGHT VISUAL (MOVE HERE) -->
-  <div class="visual-system">
+  <div class="hero-right">
+    <div class="design-card">
+      <div class="glass-shine"></div> <!-- 🔥 ADD -->
+  <div class="glass-glow"></div>  <!-- 🔥 ADD -->
+      
+      <div class="design-card-header">
+        <div class="design-card-title">Design Focus</div>
+        <span class="design-card-star">✦</span>
+      </div>
+      
+      <div class="design-items">
 
-    <!-- FLOW -->
-    <div class="flow-lines">
-      <svg viewBox="0 0 800 600" class="flow-svg">
-        <path d="M0 420 C200 340, 420 500, 620 360 S800 300, 780 280" />
-        <path d="M0 450 C200 380, 420 520, 620 400 S800 340, 780 320" />
-        <path d="M0 480 C200 420, 420 560, 620 440 S800 380, 780 360" />
-      </svg>
+        <div class="design-item">
+          <div class="item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-title">UI Design</div>
+            <div class="item-desc">Creating visually appealing interfaces</div>
+          </div>
+        </div>
 
-      <div class="flow-particles">
-        <span style="top:60%; left:55%"></span>
-        <span style="top:50%; left:65%"></span>
-        <span style="top:40%; left:75%"></span>
-        <span style="top:55%; left:80%"></span>
-        <span style="top:45%; left:70%"></span>
+        <div class="design-item">
+          <div class="item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-title">UX Thinking</div>
+            <div class="item-desc">Solving problems with user-centered approach</div>
+          </div>
+        </div>
+
+        <div class="design-item">
+          <div class="item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="3" x2="21" y1="15" y2="15"/><line x1="9" x2="9" y1="9" y2="21"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-title">Wireframing</div>
+            <div class="item-desc">Structuring ideas into clear layouts</div>
+          </div>
+        </div>
+
+        <div class="design-item">
+          <div class="item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <div class="item-text">
+            <div class="item-title">Prototyping</div>
+            <div class="item-desc">Bringing ideas to life with prototypes</div>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── ABOUT ─────────────────── -->
+<section id="about" class="about">
+  <div class="about-container">
+  <div class="section-title fade-up">
+    <span class="section-dot"></span>
+    About Me
+  </div>
+  <div class="about-grid fade-up">
+    <div class="about-img">
+      <div class="about-img">
+  <img src="images/chibi.png" alt="Sindhu Avatar">
+</div>
+    </div>
+    <div class="about-text">
+      <p><strong>I'm Sindhu S, a UI/UX Designer &amp; Frontend Developer.</strong></p>
+      <p>I am passionate about designing modern, user-friendly interfaces and turning ideas into meaningful digital experiences.</p>
+      <p>As a fresher, I am continuously learning and improving my skills to build impactful and user-centered products.</p>
+      <div class="about-chips">
+        <span class="chip"><span class="chip-icon">✦</span> Focus on clean UI design</span>
+        <span class="chip"><span class="chip-icon">✦</span> Strong interest in Figma</span>
+        <span class="chip"><span class="chip-icon">✦</span> Attention to detail</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ─────────────────── PROJECTS ─────────────────── -->
+<section id="projects">
+  <div class="section-title fade-up">
+    <span class="section-dot"></span>
+    Featured Projects
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card fade-up" data-project="smartedu">
+      <div class="project-img">
+        <img src="images/smart-edu.png" alt="Smart Edu Platform">
+        <div class="project-overlay">
+          <div class="overlay-desc">A smart education platform designed to enhance digital learning with a clean and structured experience.</div>
+          <div class="overlay-skills">
+            <span class="overlay-tag">UI Design</span>
+            <span class="overlay-tag">UX Thinking</span>
+            <span class="overlay-tag">Frontend</span>
+          </div>
+          <button class="btn-view">
+            View Details
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-header">
+          <div class="project-name">Smart Edu Platform</div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-desc">A smart education platform designed to enhance digital learning with a clean and structured experience.</div>
+        <div class="project-tags">
+          <span class="tag">UI Design</span>
+          <span class="tag">UX Thinking</span>
+          <span class="tag">Frontend</span>
+        </div>
       </div>
     </div>
 
-    <!-- CIRCLE -->
-    <div class="circle-system">
-      <svg class="circle-svg" viewBox="0 0 300 300">
-        <circle cx="150" cy="150" r="20" />
-        <circle cx="150" cy="150" r="35" />
-        <circle cx="150" cy="150" r="50" />
-        <circle cx="150" cy="150" r="65" />
-        <circle cx="150" cy="150" r="80" />
-        <circle cx="150" cy="150" r="95" />
-        <circle cx="150" cy="150" r="110" />
-        <circle cx="150" cy="150" r="125" />
-      </svg>
-
-      <div class="circle-core"></div>
+    <div class="project-card fade-up" data-project="coffeeshop">
+      <div class="project-img">
+        <img src="images/coffee.png" alt="Coffee Project">
+        <div class="project-overlay">
+          <div class="overlay-desc">A modern landing page designed for a coffee shop to showcase products with beautiful UI and smooth experience.</div>
+          <div class="overlay-skills">
+            <span class="overlay-tag">Figma</span>
+            <span class="overlay-tag">UI Design</span>
+            <span class="overlay-tag">Layout System</span> 
+          </div>
+          <button class="btn-view">
+            View Details
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project-header">
+          <div class="project-name">Coffee Shop Landing Page</div>
+          <div class="project-arrow">↗</div>
+        </div>
+        <div class="project-desc">A modern UI/UX landing page focused on product showcase and clean layout.</div>
+        <div class="project-tags">
+          <span class="tag">Figma</span>
+          <span class="tag">UI Design</span>
+          <span class="tag">Layout System</span>
+        </div>
+      </div>
     </div>
 
   </div>
-
 </section>
 
-<script src="js/main.js"></script>
+<!-- ─────────────────── SKILLS ─────────────────── -->
+<section id="skills">
+  <div class="section-title fade-up">
+    <span class="section-dot"></span>
+    Skills &amp; Tools
+  </div>
+  <div class="skills-outer">
+    <div class="skills-main-grid fade-up">
 
+      <div class="skill-col">
+        <div class="skill-col-title">Design</div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+            Figma
+          </div>
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            UI Design
+          </div>
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg>
+            UX Thinking
+          </div>
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="18" height="18" x="3" y="3" rx="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="9" y2="21"/></svg>
+            Wireframing
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-col">
+        <div class="skill-col-title">Development</div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/><circle cx="12" cy="12" r="1"/><path d="M6 12h.01M18 12h.01"/></svg>
+            HTML
+          </div>
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            CSS
+          </div>
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            JavaScript
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-col">
+        <div class="skill-col-title">UI System</div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+            Layout System
+          </div>
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22v-1a7 7 0 0 0-7-7H4"/><path d="M20 21.7A9 9 0 0 0 13.5 9"/></svg>
+            Color Theory
+          </div>
+          <div class="skill-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></svg>
+            Typography
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="quote-card fade-up">
+      <div class="quote-icon">"</div>
+      <div class="quote-text">Design is not just what it looks like and feels like. Design is how it works.</div>
+      <div class="quote-author">Steve Jobs</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── CONTACT ─────────────────── -->
+<section id="contact">
+  <div class="section-title fade-up">
+    <span class="section-dot"></span>
+    Contact Me
+  </div>
+  <div class="contact-grid">
+
+    <div class="contact-info fade-up">
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-val">sindhu12062005@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-val">github.com/luna-arc</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-val">7871211358</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form fade-up">
+      <div class="form-row">
+        <div class="form-field">
+          <input type="text" placeholder="Your Name" />
+        </div>
+        <div class="form-field">
+          <input type="email" placeholder="Your Email" />
+        </div>
+      </div>
+      <div class="form-field">
+        <textarea placeholder="Your Message"></textarea>
+      </div>
+      <button class="btn-send">
+        Send Message
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─────────────────── FOOTER ─────────────────── -->
+<footer>
+  <p>© 2024 Sindhu S. All rights reserved.</p>
+  <div class="footer-icons">
+    <a href="#" class="footer-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+    </a>
+    <a href="#" class="footer-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="#" class="footer-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- ─────────────────── MODAL ─────────────────── -->
+<div id="projectModal" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-content">
+      <button id="modalClose">✕</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalSubtitle"></p>
+
+      <h4>Project Overview</h4>
+      <p id="modalOverview"></p>
+
+      <h4>Skills Used</h4>
+      <div id="modalTags"></div>
+
+      <h4>Key Highlights</h4>
+      <ul id="modalHighlights"></ul>
+
+      <h4>Tools Used</h4>
+      <div id="modalTools"></div>
+
+      <h4>Project Type</h4>
+      <p id="modalType"></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
 <script>
   lucide.createIcons();
 </script>
 
+<script src="js/main.js"></script>
 </body>
 </html>
